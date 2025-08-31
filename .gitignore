@@ -1,0 +1,343 @@
+# CBAM-STN-TPS-YOLO .gitignore
+
+# =============================================================================
+# Python Specific
+# =============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pyvenv.cfg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# =============================================================================
+# Machine Learning & Data Science
+# =============================================================================
+# Large dataset files
+data/*/
+datasets/
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Model checkpoints and weights
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+models/
+checkpoints/
+weights/
+saved_models/
+
+# Exported models
+*.onnx
+*.torchscript
+*.tflite
+*.pb
+*.engine
+*.plan
+
+# Training outputs
+runs/
+outputs/
+lightning_logs/
+tb_logs/
+tensorboard_logs/
+
+# Results and logs
+results/models/
+results/plots/
+results/figures/
+results/checkpoints/
+results/*.png
+results/*.jpg
+results/*.jpeg
+results/*.svg
+results/*.pdf
+logs/
+*.log
+
+# Keep example results
+!results/example_*
+!results/sample_*
+
+# Experiment tracking
+wandb/
+mlruns/
+.mlflow/
+aim/
+neptune/
+
+# Large data files
+*.csv
+*.json
+*.xml
+*.yaml
+*.yml
+# Keep configuration files
+!config/*.json
+!config/*.yaml
+!config/*.yml
+!**/config*.json
+!**/config*.yaml
+!**/config*.yml
+# Keep results summaries
+!results/experimental_results.json
+!results/summary*.json
+!results/metrics*.json
+
+# =============================================================================
+# Development & IDE
+# =============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =============================================================================
+# Operating System
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# =============================================================================
+# Configuration & Secrets
+# =============================================================================
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# API Keys and secrets
+*.key
+*.pem
+secrets.yaml
+secrets.json
+credentials.json
+.secrets/
+
+# =============================================================================
+# Temporary & Cache Files
+# =============================================================================
+# General temporary files
+tmp/
+temp/
+cache/
+.cache/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# CUDA/cuDNN
+*.cudnn
+*.cuda
+
+# =============================================================================
+# Documentation
+# =============================================================================
+# Sphinx documentation
+docs/_build/
+docs/build/
+site/
+
+# =============================================================================
+# Deployment & Production
+# =============================================================================
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# =============================================================================
+# Monitoring & Profiling
+# =============================================================================
+# Profiling
+*.prof
+*.cprof
+profile_*
+
+# =============================================================================
+# Custom Project Specific
+# =============================================================================
+# Large experimental files
+experiments/large_scale/
+experiments/ablation_cache/
+experiments/grid_search_results/
+
+# Generated visualizations (keep examples)
+attention_maps/
+tps_visualizations/
+training_curves/
+!attention_maps/example_*
+!tps_visualizations/example_*
+!training_curves/example_*
+
+# Downloaded pretrained models
+pretrained/
+downloaded_models/
+
+# Benchmark results
+benchmarks/detailed/
+benchmarks/*.json
+!benchmarks/summary.json
+
+# Dataset processing intermediates
+preprocessed/
+augmented/
+cached_data/
+
+# Evaluation outputs
+evaluation_outputs/
+prediction_outputs/
+inference_results/
+
+# Paper and manuscript drafts
+manuscript/
+paper_drafts/
+*.docx
+*.pdf
+!docs/*.pdf
+!README*.pdf
+
+# =============================================================================
+# Keep Important Files
+# =============================================================================
+# Force include important configuration files
+!.gitkeep
+!.gitignore
+!.github/
+!config/
+!scripts/
+!docs/
+!examples/
+!tests/
